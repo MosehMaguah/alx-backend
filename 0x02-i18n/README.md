@@ -1,1 +1,1 @@
-flask-babel i18n
+learning flask-babel

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-""" A Basic Flask app """
+""" Basic Flask app """
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def home():
-    """ A basic Flask app """
+def root():
+    """ basic Flask app """
     return render_template('0-index.html')
 
 

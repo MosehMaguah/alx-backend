@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Basic flask and babel app """
+""" Basic Flask app, Basic Babel setup """
 from flask import Flask, render_template
 from flask_babel import Babel
 
@@ -9,19 +9,19 @@ babel = Babel(app)
 
 
 class Config(object):
-    """ The config class """
+    """ config class """
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
 app.config.from_object(Config)
-""" Use class as config for Flask app """
+""" Use that class as config for Flask app """
 
 
 @app.route('/')
-def home():
-    """ A basic Flask app """
+def root():
+    """ basic Flask app """
     return render_template("1-index.html")
 
 
