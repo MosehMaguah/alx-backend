@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Basic Flask app and Babel setup, Get locale from request """
-from flask import Flask, render_template
-from flask_babel import Babel
+from flask import Flask, render_template, request
+from flask_babel import Babel, gettext
 
 app = Flask(__name__)
 babel = Babel(app)
