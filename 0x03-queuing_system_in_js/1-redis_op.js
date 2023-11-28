@@ -21,3 +21,7 @@ const displaySchoolValue = (schoolName) => {
         console.log(value)
     });
 };
+
+displaySchoolValue('Holberton');
+setNewSchool('HolbertonSanFrancisco', '100');
+displaySchoolValue('HolbertonSanFrancisco');
